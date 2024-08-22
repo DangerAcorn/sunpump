@@ -7,7 +7,9 @@
 ## Tron Network <a href="#tron" id="tron"></a>
 
 * [SunPump API](tron/sunpump/README.md)
-  * [Trade API](tron/sunpump/trade.md)
+  * [Trade API](tron/sunpump/trade/README.md)
+    * [Live Trade API](tron/sunpump/trade/livetrade.md)
+    * [Local Trade API](tron/sunpump/trade/localtrade.md)
   * [Get Data](tron/sunpump/get-data/README.md)
     * [Get Token Details](tron/sunpump/get-data/gettoken.md)
     * [Get Token Holders](tron/sunpump/get-data/gettoken-1.md)

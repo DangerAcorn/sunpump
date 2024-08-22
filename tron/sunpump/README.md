@@ -1,6 +1,6 @@
 ---
-description: A powerful HTTPS API for anything SunPump
 icon: chart-candlestick
+description: A powerful HTTPS API for anything SunPump
 ---
 
 # SunPump API
@@ -9,7 +9,7 @@ icon: chart-candlestick
 [get-data](get-data/)
 {% endcontent-ref %}
 
-{% content-ref url="trade.md" %}
-[trade.md](trade.md)
+{% content-ref url="trade/livetrade.md" %}
+[livetrade.md](trade/livetrade.md)
 {% endcontent-ref %}
 

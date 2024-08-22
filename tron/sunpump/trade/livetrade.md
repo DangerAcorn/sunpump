@@ -1,11 +1,11 @@
 ---
+icon: house-signal
 description: >-
   This API allows users to trade SunPump tokens using TRX. This includes Buy and
   Sell transactions.
-icon: right-left
 ---
 
-# Trade API
+# Live Trade API
 
 ### Endpoint
 
@@ -14,15 +14,24 @@ icon: right-left
 * **Content-Type:** `application/json`
 * **API Key Header:** `api-key: your-api-key-here`
 
+{% hint style="warning" %}
+**Please do NOT use your main wallet private key for transaction on our API. If anybody has access to your API key or privateKey, they can access your funds.** \
+\
+If you would prefer to build transactions instead of sending your Private Key through an HTTPS request, please refer to our [**`Local Trade API`**](localtrade.md)
+{% endhint %}
+
 ### Request Body&#x20;
 
-| Parameter      | Type   | Required | Description                                                              |
-| -------------- | ------ | -------- | ------------------------------------------------------------------------ |
-| `action`       | string | Yes      | <p>Type of transaction: </p><p><code>buy</code> or <code>sell</code></p> |
-| `tokenAddress` | string | Yes      | Token Contract Address                                                   |
-| `amount`       | number | Yes      | Amount to trade (TRX for Buys)                                           |
-| `slippage`     | number | No       | Max allowed price change before transaction is reverted                  |
-| `priorityFee`  | number | No       | Tip to speed up transactions `(experimental ⚠️)`                         |
+if `{parameter}` contains `⚠️`, the data may be sensitive and you should double check what you are doing.
+
+| Parameter       | Type   | Required | Description                                                              |
+| --------------- | ------ | -------- | ------------------------------------------------------------------------ |
+| `action`        | string | Yes      | <p>Type of transaction: </p><p><code>buy</code> or <code>sell</code></p> |
+| `tokenAddress`  | string | Yes      | Token Contract Address                                                   |
+| `amount`        | number | Yes      | Amount to trade (TRX for Buys)                                           |
+| `slippage`      | number | No       | Max allowed price change before transaction is reverted                  |
+| `priorityFee`   | number | No       | Tip to speed up transactions `(experimental ⚠️)`                         |
+| `privateKey ⚠️` | string | Yes      | Your Wallet Private Key (use a fresh wallet)                             |
 
 ### Example Request
 
