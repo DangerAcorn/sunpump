@@ -9,7 +9,7 @@ description: A powerful HTTPS API for anything SunPump
 [get-data](get-data/)
 {% endcontent-ref %}
 
-{% content-ref url="trade/livetrade.md" %}
-[livetrade.md](trade/livetrade.md)
+{% content-ref url="trade.md" %}
+[trade.md](trade.md)
 {% endcontent-ref %}
 

@@ -1,14 +1,16 @@
 # Table of contents
 
+* [API Status - 🚧](README.md)
+
 ## Welcome
 
-* [Getting Started](README.md)
+* [Getting Started](<README (1).md>)
 
 ## Tron Network <a href="#tron" id="tron"></a>
 
 * [SunPump API](tron/sunpump/README.md)
   * [Trade API](tron/sunpump/trade/README.md)
-    * [Live Trade API](tron/sunpump/trade/livetrade.md)
+    * [Live Trade API](tron/sunpump/trade.md)
     * [Local Trade API](tron/sunpump/trade/localtrade.md)
   * [Get Data](tron/sunpump/get-data/README.md)
     * [Get Token Details](tron/sunpump/get-data/gettoken.md)

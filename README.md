@@ -1,3 +1,2 @@
-SunPump Bots, Tools, and Scripts are all available here: https://t.me/+pE-h-2eMeoRhZDBh
+# API Status - 🚧
 
-API documentation available here: https://acrns-organization.gitbook.io/dangeracorn/

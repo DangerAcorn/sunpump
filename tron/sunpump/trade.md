@@ -1,8 +1,8 @@
 ---
-icon: house-signal
 description: >-
   This API allows users to trade SunPump tokens using TRX. This includes Buy and
   Sell transactions.
+icon: house-signal
 ---
 
 # Live Trade API
@@ -17,7 +17,7 @@ description: >-
 {% hint style="warning" %}
 **Please do NOT use your main wallet private key for transaction on our API. If anybody has access to your API key or privateKey, they can access your funds.** \
 \
-If you would prefer to build transactions instead of sending your Private Key through an HTTPS request, please refer to our [**`Local Trade API`**](localtrade.md)
+If you would prefer to build transactions instead of sending your Private Key through an HTTPS request, please refer to our [**`Local Trade API`**](trade/localtrade.md)
 {% endhint %}
 
 ### Request Body&#x20;
@@ -254,7 +254,7 @@ curl_close($ch);
 
 ### **Example Error Responses**
 
-**Invalid Parameters:**
+**Invalid Parameters**
 
 ```json
 jsonCopy code{
@@ -264,7 +264,7 @@ jsonCopy code{
 }
 ```
 
-**Max Slippage Reached:**
+**Max Slippage Reached**
 
 ```json
 jsonCopy code{
@@ -274,7 +274,7 @@ jsonCopy code{
 }
 ```
 
-**Insufficient Funds:**
+**Insufficient Funds**
 
 ```json
 jsonCopy code{
@@ -284,7 +284,7 @@ jsonCopy code{
 }
 ```
 
-**Invalid Action:**
+**Invalid Action**
 
 ```json
 jsonCopy code{
