@@ -4,28 +4,24 @@
 
 * [Getting Started](README.md)
 
-## Sun.io <a href="#sun" id="sun"></a>
-
-* [Developer Docs](sun/api/README.md)
-  * [SunPump API](sun/api/sunpump/README.md)
-    * [Trade API](sun/api/sunpump/trade.md)
-    * [Get Data](sun/api/sunpump/get-data/README.md)
-      * [Get Token Details](sun/api/sunpump/get-data/gettoken.md)
-      * [Get Token Holders](sun/api/sunpump/get-data/gettoken-1.md)
-      * [Get Recent Trades](sun/api/sunpump/get-data/gettrades.md)
-      * [🚧 Get Curve Progress](sun/api/sunpump/get-data/getcurveprogress.md)
-      * [🚧 Webhooks](sun/api/sunpump/get-data/webhooks/README.md)
-        * [Subscriptions](sun/api/sunpump/get-data/webhooks/subscriptions.md)
-
 ## Tron Network <a href="#tron" id="tron"></a>
 
+* [SunPump API](tron/sunpump/README.md)
+  * [Trade API](tron/sunpump/trade.md)
+  * [Get Data](tron/sunpump/get-data/README.md)
+    * [Get Token Details](tron/sunpump/get-data/gettoken.md)
+    * [Get Token Holders](tron/sunpump/get-data/gettoken-1.md)
+    * [Get Recent Trades](tron/sunpump/get-data/gettrades.md)
+    * [🚧 Get Curve Progress](tron/sunpump/get-data/getcurveprogress.md)
+    * [🚧 Webhooks](tron/sunpump/get-data/webhooks/README.md)
+      * [Subscriptions](tron/sunpump/get-data/webhooks/subscriptions.md)
 * [Helpers](tron/helpers/README.md)
   * [Create Wallet](tron/helpers/createwallet.md)
   * [Transfer](tron/helpers/transfer.md)
   * [🚧 Webhooks](tron/helpers/webhooks/README.md)
     * [Subscriptions](tron/helpers/webhooks/subscriptions.md)
 
-## 🚧 Solana Network <a href="#solana" id="solana"></a>
+## Solana Network <a href="#solana" id="solana"></a>
 
 * [Helpers](solana/helpers/README.md)
   * [Create Wallet](solana/helpers/createwallet.md)
@@ -35,6 +31,7 @@
 
 ## Bots
 
+* [Getting Started](bots/start.md)
 * [Tron](bots/tron/README.md)
   * [SunPump](bots/tron/sunpump/README.md)
     * [Monitors](bots/tron/sunpump/monitors/README.md)
@@ -55,3 +52,8 @@
     * [Raydium Monitors](bots/solana/raydium/raydium-monitors/README.md)
       * [Raydium New Tokens](bots/solana/raydium/raydium-monitors/new-tokens.md)
       * [Raydium Boomers](bots/solana/raydium/raydium-monitors/boomers.md)
+
+## Socials
+
+* [Discord](https://discord.gg/BRxeHgm5q7)
+* [Telegram](https://t.me/+v1I68KO6fSpiZmQx)
