@@ -1,8 +1,14 @@
 # Table of contents
 
-## Welcome
+## DangerAcorn <a href="#welcome" id="welcome"></a>
 
-* [Getting Started](README.md)
+* [Welcome](README.md)
+
+## ACORN API <a href="#api" id="api"></a>
+
+* [Get Started](api/start/README.md)
+  * [Request an API Key](api/start/request-a-key.md)
+  * [View Plans](api/start/plans.md)
 
 ## API STATUS
 
