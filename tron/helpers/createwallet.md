@@ -1,12 +1,14 @@
 ---
+icon: wallet
 description: >-
   This API endpoint allows users to create one or more new Tron wallets. The
   response includes the generated public and private keys for the requested
   number of wallets.
-icon: wallet
 ---
 
 # Create Wallet
+
+> **Note:** You must provide a valid API key in the request headers to access this endpoint.
 
 ### Endpoint
 

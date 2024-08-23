@@ -1,11 +1,13 @@
 ---
-description: This endpoint lets you easily transfer TRX from one wallet to another.
 icon: envelope-open-dollar
+description: This endpoint lets you easily transfer TRX from one wallet to another.
 ---
 
 # Transfer
 
-#### **Endpoint**
+> **Note:** You must provide a valid API key in the request headers to access this endpoint.
+
+### Endpoint
 
 * **URL:** `/tron/transferTrx`
 * **Method:** `POST`

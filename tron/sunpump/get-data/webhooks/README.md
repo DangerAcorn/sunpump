@@ -8,8 +8,8 @@ description: >-
 # 🚧 Webhooks
 
 {% hint style="info" %}
-This method is currently  in development&#x20;
+**This method is currently in development**&#x20;
 
-Check back soon or follow our socials for updates
+Check back soon or follow our [socials](broken-reference) for updates
 {% endhint %}
 

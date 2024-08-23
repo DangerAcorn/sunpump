@@ -1,11 +1,13 @@
 ---
+icon: clock-rotate-left
 description: >-
   This endpoint retrieves recent trades and their transaction details for tokens
   on SunPump.
-icon: clock-rotate-left
 ---
 
 # Get Recent Trades
+
+> **Note:** You must provide a valid API key in the request headers to access this endpoint.
 
 ### Endpoint
 

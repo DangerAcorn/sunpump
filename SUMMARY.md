@@ -1,10 +1,14 @@
 # Table of contents
 
-* [API Status - 🚧](README.md)
-
 ## Welcome
 
-* [Getting Started](<README (1).md>)
+* [Getting Started](README.md)
+
+## API STATUS
+
+* [Tron - 🚧](api-status/tron.md)
+* [Solana - 🚧](api-status/solana.md)
+* [Ethereum - 🚧](api-status/ethereum.md)
 
 ## Tron Network <a href="#tron" id="tron"></a>
 

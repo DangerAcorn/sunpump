@@ -1,6 +1,6 @@
 ---
 icon: chart-candlestick
-description: A powerful HTTPS API for anything SunPump
+description: A powerful API for everything SunPump
 ---
 
 # SunPump API
