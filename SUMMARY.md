@@ -12,7 +12,7 @@
 
 ## API STATUS
 
-* [Tron - 🚧](api-status/tron.md)
+* [Tron - 🟡](api-status/tron.md)
 * [Solana - 🚧](api-status/solana.md)
 * [Ethereum - 🚧](api-status/ethereum.md)
 
@@ -23,10 +23,11 @@
     * [Live Trade API](tron/sunpump/trade.md)
     * [Local Trade API](tron/sunpump/trade/localtrade.md)
   * [Get Data](tron/sunpump/get-data/README.md)
-    * [Get Token Details](tron/sunpump/get-data/gettoken.md)
-    * [Get Token Holders](tron/sunpump/get-data/gettoken-1.md)
-    * [Get Recent Trades](tron/sunpump/get-data/gettrades.md)
-    * [🚧 Get Curve Progress](tron/sunpump/get-data/getcurveprogress.md)
+    * [Get Token Details](tron/sunpump/get-data/details.md)
+    * [Get Token Holders](tron/sunpump/get-data/holders.md)
+    * [Get Recent Trades](tron/sunpump/get-data/recenttrades.md)
+    * [🚧 Get Curve Progress](tron/sunpump/get-data/curveprogress.md)
+    * [Get Token Price](tron/sunpump/get-data/tokenprice.md)
     * [🚧 Webhooks](tron/sunpump/get-data/webhooks/README.md)
       * [Subscriptions](tron/sunpump/get-data/webhooks/subscriptions.md)
 * [Helpers](tron/helpers/README.md)

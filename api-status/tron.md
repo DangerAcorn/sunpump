@@ -1,10 +1,10 @@
 ---
-description: Current status of the DangerAcorn Tron Network API
 icon: triangle-person-digging
+description: Current status of the DangerAcorn Tron Network API
 ---
 
-# Tron - 🚧
+# Tron - 🟡
 
 {% hint style="warning" %}
-API Endpoint Not Live Yet
+API Endpoint is currently being developed and some endpoints may not be available to use immediately. **Please use with caution.**
 {% endhint %}
