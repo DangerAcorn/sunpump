@@ -37,7 +37,7 @@ Check the current status of the Acorn API services and any known issues.
 
 Reach out to our support team for assistance.
 
-[Contact us →](broken-reference)
+[Discord →](https://discord.gg/BRxeHgm5q7)  |  [Telegram →](https://t.me/+v1I68KO6fSpiZmQx)
 
 ***
 
