@@ -1,6 +1,0 @@
----
-icon: acorn
----
-
-# Get Started
-
