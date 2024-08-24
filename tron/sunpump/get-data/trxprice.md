@@ -1,17 +1,11 @@
 ---
-description: >-
-  Allows users to fetch current token price in TRX and USD for a specific token
-  (un-bonded) on SunPump.
 icon: dollar-sign
+description: >-
+  This API provides the current price of TRX in USD. You can use this endpoint
+  to retrieve the most up-to-date TRX price.
 ---
 
 # Get TRX Price
-
-{% hint style="info" %}
-**This method is currently in development**&#x20;
-
-Check back soon or follow our [socials](broken-reference) for updates
-{% endhint %}
 
 ### Endpoint
 
@@ -20,23 +14,49 @@ Check back soon or follow our [socials](broken-reference) for updates
 * **Content-Type:** `application/json`
 * **API Key Header:** `api-key: your-api-key`
 
-### Example Request Body JSON
+### Request Example
 
-```json
-{
-  "address": "TVccuknJqKjC6bzH9WyDBrZcbzbKWmoA71", // Token Contract Address
-}
+```bash
+curl -X GET https://api.dangeracorn.com/tron/price \
+-H "Content-Type: application/json" \
+-H "api-key: your-api-key"
 ```
 
 ### Example Response JSON
 
 ```json
 {
-    "data": [{
-    "priceInTRX": 0.0025,
-    "priceInUSD": 0.0003735,
-}], 
-    "status": "success",
-    "code": "200"
+  "price": 0.0745,
+  "status": "success",
+  "code": "200"
 }
 ```
+
+### **Error Responses**
+
+**Internal Server Error**
+
+```json
+{
+  "error": "Failed to fetch TRX price",
+  "message": "An error occurred while fetching the TRX price.",
+  "status": "error",
+  "code": "500"
+}
+```
+
+**400 Invalid API Key**
+
+```json
+{
+  "error": "Unauthorized",
+  "message": "Invalid API key provided.",
+  "status": "error",
+  "code": "401"
+}
+```
+
+### _Notes_
+
+> * **Rate Limiting:** This endpoint is rate-limited according to your plan's API key limits. Ensure that you handle these limits in your application.
+> * **Error Handling:** In case of network issues or if we can't fetch the price, the response will return a 500 error code with an appropriate error message.

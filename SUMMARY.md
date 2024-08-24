@@ -28,6 +28,7 @@
     * [Get Recent Trades](tron/sunpump/get-data/recenttrades.md)
     * [🚧 Get Curve Progress](tron/sunpump/get-data/curveprogress.md)
     * [Get Token Price](tron/sunpump/get-data/tokenprice.md)
+    * [Get Token Balance](tron/sunpump/get-data/tokenbalance.md)
     * [Get TRX Price](tron/sunpump/get-data/trxprice.md)
     * [🚧 Webhooks](tron/sunpump/get-data/webhooks/README.md)
       * [Subscriptions](tron/sunpump/get-data/webhooks/subscriptions.md)

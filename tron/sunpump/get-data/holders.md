@@ -266,3 +266,7 @@ print_r($response);
   "code": "500"
 }
 ```
+
+### _Notes_
+
+> * **Rate Limiting:** This endpoint is rate-limited according to your plan's API key limits. Ensure that you handle these limits in your application.

@@ -16,7 +16,7 @@ description: >-
 * **API Key Header:** `api-key: your-api-key-here`
 
 {% hint style="warning" %}
-**This method is currently in development**&#x20;
+**This method is currently being tested**
 
 Please use with caution.
 {% endhint %}
@@ -428,8 +428,9 @@ echo $response;
 }
 ```
 
-**Notes**
+### _Notes_
 
+> * **Rate Limiting:** This endpoint is rate-limited according to your plan's API key limits. Ensure that you handle these limits in your application.
 > * **Unsigned Transactions**: The API returns unsigned transactions that users must sign before broadcasting.
 > * **Slippage Tolerance**: Ensure the slippage is reasonable to avoid reverted transactions.
 > * **Fees**: A small fee is applied on each trade. Please refer to [Plans](../../../api/start/plans.md) to see what fee your plan uses.
