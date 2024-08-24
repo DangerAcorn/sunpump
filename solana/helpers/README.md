@@ -1,6 +1,0 @@
----
-icon: handshake-simple
----
-
-# Helpers
-

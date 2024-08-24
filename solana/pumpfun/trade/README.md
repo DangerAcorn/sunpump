@@ -1,6 +1,0 @@
----
-icon: shuffle
----
-
-# Trade API
-
