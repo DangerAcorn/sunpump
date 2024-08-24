@@ -1,0 +1,6 @@
+---
+icon: tag
+---
+
+# Pricing
+

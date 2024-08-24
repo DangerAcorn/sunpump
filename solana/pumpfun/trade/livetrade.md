@@ -1,15 +1,15 @@
 ---
-icon: house-signal
 description: >-
   This API allows users to trade SunPump tokens using TRX. This includes Buy and
   Sell transactions.
+icon: house-signal
 ---
 
 # Live Trade API
 
 ### Endpoint
 
-* **URL:** `/sunpump/trade`
+* **URL:** `/pumpfun/trade`
 * **Method:** `POST`
 * **Content-Type:** `application/json`
 * **API Key Header:** `api-key: your-api-key-here`
@@ -17,7 +17,7 @@ description: >-
 {% hint style="warning" %}
 **Please do NOT use your main wallet private key for transaction on our API. If anybody has access to your API key or privateKey, they can access your funds.** \
 \
-If you would prefer to build transactions instead of sending your Private Key through an HTTPS request, please refer to our [**`Local Trade API`**](trade/localtrade.md)
+If you would prefer to build transactions instead of sending your Private Key through an HTTPS request, please refer to our [**`Local Trade API`**](../../../tron/sunpump/trade/localtrade.md)
 {% endhint %}
 
 ### Request Body&#x20;
@@ -38,7 +38,7 @@ if `{parameter}` contains `⚠️`, the data may be sensitive and you should dou
 {% tabs %}
 {% tab title="cURL" %}
 ```sh
-curl -X POST "http://api.dangeracorn.com/sunpump/trade" \
+curl -X POST "http://api.dangeracorn.bot/pumpfun/trade" \
 -H "Content-Type: application/json" \
 -H "api-key: your-api-key" \
 -d '{

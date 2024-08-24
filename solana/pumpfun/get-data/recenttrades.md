@@ -1,8 +1,8 @@
 ---
-icon: clock-rotate-left
 description: >-
   This endpoint retrieves recent trades and their transaction details for tokens
   on SunPump.
+icon: clock-rotate-left
 ---
 
 # Get Recent Trades
@@ -11,7 +11,7 @@ description: >-
 
 ### Endpoint
 
-* **URL:** `/sunpump/getRecentTrades`
+* **URL:** `/pumpfun/getRecentTrades`
 * **Method:** `POST`
 * **Content-Type:** `application/json`
 * **API Key Header:** `api-key: your-api-key`
@@ -35,7 +35,7 @@ description: >-
 ### Example cURL Request
 
 ```
-curl -X POST "http://api.dangeracorn.com/api/sunpump/getRecentTrades" \
+curl -X POST "http://api.dangeracorn.com/pumpfun/getRecentTrades" \
 -H "Content-Type: application/json" \
 -H "api-key: your-api-key" \
 -d '{

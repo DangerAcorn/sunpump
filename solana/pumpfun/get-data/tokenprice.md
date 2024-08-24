@@ -1,8 +1,8 @@
 ---
-icon: circle-dollar
 description: >-
   Allows users to fetch current token price in TRX and USD for a specific token
   (un-bonded) on SunPump.
+icon: circle-dollar
 ---
 
 # Get Token Price
@@ -15,7 +15,7 @@ Check back soon or follow our [socials](broken-reference) for updates
 
 ### Endpoint
 
-* **URL:** `/sunpump/getTokenPrice`
+* **URL:** `/pumpfun/getTokenPrice`
 * **Method:** `GET`
 * **Content-Type:** `application/json`
 * **API Key Header:** `api-key: your-api-key`

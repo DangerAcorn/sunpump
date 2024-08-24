@@ -1,17 +1,15 @@
 ---
-description: Allows users to fetch the top token holders of a specific token on SunPump.
 icon: person-walking-luggage
+description: Allows users to fetch the top token holders of a specific token on SunPump.
 ---
 
 # Get Token Holders
-
-
 
 > **Note:** You must provide a valid API key in the request headers to access this endpoint.
 
 ### Endpoint
 
-* **URL:** `/api/sunpump/getTokenHolders`
+* **URL:** `/sunpump/getTokenHolders`
 * **Method:** `POST`
 * **Content-Type:** `application/json`
 * **API Key Header:** `api-key: your-api-key`
@@ -29,7 +27,7 @@ icon: person-walking-luggage
 {% tabs %}
 {% tab title="cURL" %}
 ```sh
-curl -X POST "https://api.dangeracorn.bot/sunpump/getTokenHolders" \
+curl -X POST "http://api.dangeracorn.com/sunpump/getTokenHolders" \
 -H "Content-Type: application/json" \
 -H "api-key: your-api-key" \
 -d '{

@@ -1,8 +1,8 @@
 ---
-icon: circle-info
 description: >-
   This API endpoint fetches token details from SunPump, providing metadata
   (e.g., name, symbol, URLs) and dynamic data (e.g., market stats, price).
+icon: circle-info
 ---
 
 # Get Token Details
@@ -11,7 +11,7 @@ description: >-
 
 ### Endpoint
 
-* **URL:** `/sunpump/getTokenDetails`
+* **URL:** `/pumpfun/getTokenDetails`
 * **Method:** `POST`
 * **Content-Type:** `application/json`
 * **API Key Header:** `api-key: your-api-key`
@@ -33,7 +33,7 @@ description: >-
 {% tabs %}
 {% tab title="cURL" %}
 ```sh
-curl -X POST "http://api.dangeracorn.com/sunpump/getTokenDetails" \
+curl -X POST "http://api.dangeracorn.bot/pumpfun/getTokenDetails" \
 -H "Content-Type: application/json" \
 -H "api-key: your-api-key" \
 -d '{

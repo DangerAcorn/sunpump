@@ -1,43 +1,39 @@
 ---
-icon: circle-info
-description: >-
-  This API endpoint fetches token details from SunPump, providing metadata
-  (e.g., name, symbol, URLs) and dynamic data (e.g., market stats, price).
+description: Allows users to fetch the top token holders of a specific token on SunPump.
+icon: person-walking-luggage
 ---
 
-# Get Token Details
+# Get Token Holders
 
 > **Note:** You must provide a valid API key in the request headers to access this endpoint.
 
 ### Endpoint
 
-* **URL:** `/sunpump/getTokenDetails`
+* **URL:** `/pumpfun/getTokenHolders`
 * **Method:** `POST`
 * **Content-Type:** `application/json`
 * **API Key Header:** `api-key: your-api-key`
 
-### Request Body
+### Request Body&#x20;
 
-* **address** (string, required): The contract address of the token you want to retrieve details for.
-
-### Example Request Body JSON
-
-```json
-{
-  "address": "TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z" // Token Contract Address
-}
-```
+| Field     | Type   | Required | Description                 |
+| --------- | ------ | -------- | --------------------------- |
+| address   | string | true     | Token contract address      |
+| **page**  | string | true     | Page number for pagination. |
+| **limit** | number | false    | Number of holders per page. |
 
 ### Example Request
 
 {% tabs %}
 {% tab title="cURL" %}
 ```sh
-curl -X POST "http://api.dangeracorn.com/sunpump/getTokenDetails" \
+curl -X POST "http://api.dangeracorn.bot/pumpfun/getTokenHolders" \
 -H "Content-Type: application/json" \
 -H "api-key: your-api-key" \
 -d '{
-  "address": "TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z"
+  "address": "TYrsH6Ee92FJD83QoMo9BXJpow4PRoCjvH",
+  "page": 1,
+  "limit" 100
 }'
 ```
 {% endtab %}
@@ -48,10 +44,12 @@ curl -X POST "http://api.dangeracorn.com/sunpump/getTokenDetails" \
 const axios = require('axios');
 
 const data = {
-  address: 'TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z'
+  address: 'TYrsH6Ee92FJD83QoMo9BXJpow4PRoCjvH',
+  page: 1,
+  limit: 100
 };
 
-axios.post('https://api.dangeracorn.bot/sunpump/getTokenDetails', data, {
+axios.post('https://api.dangeracorn.bot/sunpump/getTokenHolders', data, {
   headers: {
     'Content-Type': 'application/json',
     'api-key': 'your-api-key'
@@ -69,21 +67,25 @@ axios.post('https://api.dangeracorn.bot/sunpump/getTokenDetails', data, {
 {% endtab %}
 
 {% tab title="Python" %}
-<pre class="language-python" data-title="pip install requests"><code class="lang-python">import requests
-<strong>
-</strong>url = 'https://api.dangeracorn.bot/sunpump/getTokenDetails'
+{% code title="pip install requests" %}
+```python
+import requests
+
+url = 'https://api.dangeracorn.bot/sunpump/getTokenHolders'
 headers = {
     'Content-Type': 'application/json',
     'api-key': 'your-api-key'
 }
 data = {
-    "address": "TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z"
+    "address": "TYrsH6Ee92FJD83QoMo9BXJpow4PRoCjvH", # Token Contract Address
+    "page": 1  # Page index
+    "limit": 100  # Max Holders to retrieve
 }
 
 response = requests.post(url, json=data, headers=headers)
 print(response.json())
-
-</code></pre>
+```
+{% endcode %}
 {% endtab %}
 
 {% tab title="Node.js" %}
@@ -91,13 +93,15 @@ print(response.json())
 const https = require('https');
 
 const data = JSON.stringify({
-  address: 'TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z'
+  address: 'TYrsH6Ee92FJD83QoMo9BXJpow4PRoCjvH',
+  page: 1
+  limit: 100
 });
 
 const options = {
   hostname: 'api.dangeracorn.bot',
   port: 443,
-  path: '/sunpump/getTokenDetails',
+  path: '/sunpump/getTokenHolders',
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -139,10 +143,12 @@ import (
 )
 
 func main() {
-	url := "https://api.dangeracorn.bot/sunpump/getTokenDetails"
+	url := "https://api.dangeracorn.bot/sunpump/getTokenHolders"
 
-	data := map[string]string{
-		"address": "TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z",
+	data := map[string]interface{}{
+		"address": "TYrsH6Ee92FJD83QoMo9BXJpow4PRoCjvH",
+		"page":    1,
+		"limit": 100
 	}
 	jsonData, _ := json.Marshal(data)
 
@@ -175,10 +181,12 @@ func main() {
 ```php
 <?php
 $apiKey = 'your-api-key';
-$url = 'https://api.dangeracorn.bot/sunpump/getTokenDetails';
+$url = 'https://api.dangeracorn.bot/sunpump/getTokenHolders';
 
 $data = [
-    'address' => 'TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z'
+    'address' => 'TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z',
+    'page' => 1,
+    'page' => 100
 ];
 
 $options = [
@@ -209,32 +217,29 @@ print_r($response);
 
 ```json
 {
-    "metadata": {
-        "name": "TRONDOG",
-        "symbol": "TRONDOG",
-        "description": "DOG ON TRON",
-        "image": "https://cdn.sunpump.meme/public/logo/TRONDOG_TDpZeL_5PshTZjrCHc1.jpg",
-        "twitter": null,
-        "telegram": null,
-        "website": null,
-        "ownerAddress": "TDpZeLu2HbhoarLZEdwCZudyoafMgLiqGb",
-        "contractAddress": "TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z"
+    "data": [{
+        "address": "TTfvyrAz86hbZk5iDpKD78pqLGgi8C7AAw",
+        "balance": 763708075.28,
+        "priceInTrx": 0.000053879530896793,
+        "valueInTrx": 41148.23283817907,
+        "percentage": 76.370807528,
+        "type": "curve"
+    },{
+        "address": "TWp3D9mPbTKv7epKzDKUS1kKALYa4vAmMk",
+        "balance": 91373664.74,
+        "priceInTrx": 0.00027160312242571,
+        "valueInTrx": 24817.372650864,
+        "percentage": 9.137366474,
+        "type": "dev"
     },
-    "data": {
-        "currentStatus": "CREATED",
-        "priceInTrx": 0.00003710479917223,
-        "totalSupply": 1000000000,
-        "currentSold": 65359069,
-        "marketCap": 5717.79,
-        "trxReserve": 2277,
-        "tokenReserve": 734640931.41,
-        "volume24Hr": 0,
-        "priceChange24Hr": 0,
-        "pumpPercentage": 2,
-        "createTxHash": "6c12fff2f1ad520adc1f79ff38863c26be15b49bbdb7bfee83833876fb452109",
-        "launchTxHash": null,
-        "active": true
-    },
+    {
+        "address": "TEw922sYxZLoq5AcxeNMj2GNEXMbDFk51y",
+        "balance": 367648.55,
+        "priceInTrx": 0.000053879530896793,
+        "valueInTrx": 19.808731408886146,
+        "percentage": 0.036764855,
+        "type": "trader"
+    }],
     "status": "success",
     "code": "200"
 }
