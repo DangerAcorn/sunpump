@@ -38,7 +38,7 @@ if `{parameter}` contains `⚠️`, the data may be sensitive and you should dou
 {% tabs %}
 {% tab title="cURL" %}
 ```sh
-curl -X POST "http://api.dangeracorn.com/sunpump/trade" \
+curl -X POST "https://api.dangeracorn.com/sunpump/trade" \
 -H "Content-Type: application/json" \
 -H "api-key: your-api-key" \
 -d '{
@@ -67,7 +67,7 @@ const data = {
   privateKey: "your-private-key"
 };
 
-axios.post('https://api.dangeracorn.bot/sunpump/trade', data, {
+axios.post('https://api.dangeracorn.com/sunpump/trade', data, {
   headers: {
     'Content-Type': 'application/json',
     'api-key': 'your-api-key'
@@ -89,7 +89,7 @@ axios.post('https://api.dangeracorn.bot/sunpump/trade', data, {
 ```python
 import requests
 
-url = 'https://api.dangeracorn.bot/sunpump/trade'
+url = 'https://api.dangeracorn.com/sunpump/trade'
 headers = {
     'Content-Type': 'application/json',
     'api-key': 'your-api-key'
@@ -124,7 +124,7 @@ const data = JSON.stringify({
 });
 
 const options = {
-  hostname: 'api.dangeracorn.bot',
+  hostname: 'api.dangeracorn.com',
   port: 443,
   path: '/sunpump/trade',
   method: 'POST',
@@ -168,7 +168,7 @@ import (
 )
 
 func main() {
-    url := "https://api.dangeracorn.bot/sunpump/trade"
+    url := "https://api.dangeracorn.com/sunpump/trade"
     apiKey := "your-api-key"
 
     data := map[string]interface{}{
@@ -204,7 +204,7 @@ func main() {
 {% tab title="PHP" %}
 ```php
 <?php
-$api_url = "https://api.dangeracorn.bot/sunpump/trade";
+$api_url = "https://api.dangeracorn.com/sunpump/trade";
 $api_key = "your-api-key";
 
 $data = array(

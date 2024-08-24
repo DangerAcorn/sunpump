@@ -33,7 +33,7 @@ description: >-
 {% tabs %}
 {% tab title="cURL" %}
 ```sh
-curl -X POST "http://api.dangeracorn.com/sunpump/getTokenDetails" \
+curl -X POST "https://api.dangeracorn.com/sunpump/getTokenDetails" \
 -H "Content-Type: application/json" \
 -H "api-key: your-api-key" \
 -d '{

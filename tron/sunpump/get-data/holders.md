@@ -27,7 +27,7 @@ description: Allows users to fetch the top token holders of a specific token on 
 {% tabs %}
 {% tab title="cURL" %}
 ```sh
-curl -X POST "http://api.dangeracorn.com/sunpump/getTokenHolders" \
+curl -X POST "https://api.dangeracorn.com/sunpump/getTokenHolders" \
 -H "Content-Type: application/json" \
 -H "api-key: your-api-key" \
 -d '{
@@ -49,7 +49,7 @@ const data = {
   limit: 100
 };
 
-axios.post('https://api.dangeracorn.bot/sunpump/getTokenHolders', data, {
+axios.post('https://api.dangeracorn.com/sunpump/getTokenHolders', data, {
   headers: {
     'Content-Type': 'application/json',
     'api-key': 'your-api-key'
@@ -71,7 +71,7 @@ axios.post('https://api.dangeracorn.bot/sunpump/getTokenHolders', data, {
 ```python
 import requests
 
-url = 'https://api.dangeracorn.bot/sunpump/getTokenHolders'
+url = 'https://api.dangeracorn.com/sunpump/getTokenHolders'
 headers = {
     'Content-Type': 'application/json',
     'api-key': 'your-api-key'
@@ -99,7 +99,7 @@ const data = JSON.stringify({
 });
 
 const options = {
-  hostname: 'api.dangeracorn.bot',
+  hostname: 'api.dangeracorn.com',
   port: 443,
   path: '/sunpump/getTokenHolders',
   method: 'POST',
@@ -143,7 +143,7 @@ import (
 )
 
 func main() {
-	url := "https://api.dangeracorn.bot/sunpump/getTokenHolders"
+	url := "https://api.dangeracorn.com/sunpump/getTokenHolders"
 
 	data := map[string]interface{}{
 		"address": "TYrsH6Ee92FJD83QoMo9BXJpow4PRoCjvH",
@@ -181,7 +181,7 @@ func main() {
 ```php
 <?php
 $apiKey = 'your-api-key';
-$url = 'https://api.dangeracorn.bot/sunpump/getTokenHolders';
+$url = 'https://api.dangeracorn.com/sunpump/getTokenHolders';
 
 $data = [
     'address' => 'TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z',

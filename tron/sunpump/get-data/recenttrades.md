@@ -35,7 +35,7 @@ description: >-
 ### Example cURL Request
 
 ```
-curl -X POST "http://api.dangeracorn.com/api/sunpump/getRecentTrades" \
+curl -X POST "https://api.dangeracorn.com/api/sunpump/getRecentTrades" \
 -H "Content-Type: application/json" \
 -H "api-key: your-api-key" \
 -d '{
