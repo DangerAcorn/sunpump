@@ -1,13 +1,9 @@
----
-icon: circle-info
-description: >-
+# Get Token Details
   This API endpoint fetches token details from SunPump, providing metadata
   (e.g., name, symbol, URLs) and dynamic data (e.g., market stats, price).
----
-
-# Get Token Details
-
 > **Note:** You must provide a valid API key in the request headers to access this endpoint.
+
+<a href="#example-response-json">See Example Response</a>
 
 ### Endpoint
 
@@ -28,10 +24,8 @@ description: >-
 }
 ```
 
-### Example Request
+### Example cURL Request
 
-{% tabs %}
-{% tab title="cURL" %}
 ```sh
 curl -X POST "https://api.dangeracorn.com/sunpump/getTokenDetails" \
 -H "Content-Type: application/json" \
@@ -40,10 +34,9 @@ curl -X POST "https://api.dangeracorn.com/sunpump/getTokenDetails" \
   "address": "TNNND7Gq3h6s6zMdCB56PHvW8959HPh97z"
 }'
 ```
-{% endtab %}
 
-{% tab title="JavaScript" %}
-{% code title="npm install axios" %}
+### Example JavaScript Request
+
 ```javascript
 const axios = require('axios');
 
@@ -65,10 +58,8 @@ axios.post('https://api.dangeracorn.bot/sunpump/getTokenDetails', data, {
 });
 
 ```
-{% endcode %}
-{% endtab %}
+### Example Python Request
 
-{% tab title="Python" %}
 <pre class="language-python" data-title="pip install requests"><code class="lang-python">import requests
 <strong>
 </strong>url = 'https://api.dangeracorn.bot/sunpump/getTokenDetails'
@@ -84,9 +75,8 @@ response = requests.post(url, json=data, headers=headers)
 print(response.json())
 
 </code></pre>
-{% endtab %}
+### Example Node.js Request
 
-{% tab title="Node.js" %}
 ```javascript
 const https = require('https');
 
@@ -125,9 +115,8 @@ req.write(data);
 req.end();
 
 ```
-{% endtab %}
+### Example Go Request
 
-{% tab title="Go" %}
 ```go
 package main
 
@@ -169,9 +158,8 @@ func main() {
 }
 
 ```
-{% endtab %}
+### Example PHP Request
 
-{% tab title="PHP" %}
 ```php
 <?php
 $apiKey = 'your-api-key';
@@ -202,9 +190,6 @@ print_r($response);
 ?>
 
 ```
-{% endtab %}
-{% endtabs %}
-
 ### Example Response JSON
 
 ```json
