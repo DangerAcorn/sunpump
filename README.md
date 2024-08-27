@@ -2,6 +2,8 @@
 
 #### Contact [DangerAcorn](https://t.me/DangerAcorn) for questions or for Custom Scripts
 
+#### If you are a developer and need an advanced Tron/SunPump API here is the [documentation](https://docs.dangeracorn.com)
+
 # Current SunPump Bot List
 
 ### SunPump Bond Sniper + Monitor
