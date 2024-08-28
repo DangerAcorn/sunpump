@@ -1,6 +1,0 @@
----
-icon: radar
----
-
-# PumpFun Monitors
-
