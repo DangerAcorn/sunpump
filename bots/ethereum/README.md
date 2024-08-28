@@ -1,6 +1,0 @@
----
-icon: ethereum
----
-
-# Ethereum
-

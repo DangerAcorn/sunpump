@@ -1,6 +1,0 @@
----
-icon: unicorn
----
-
-# Uniswap
-
