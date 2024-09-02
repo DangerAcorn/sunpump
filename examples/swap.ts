@@ -62,17 +62,3 @@ export const sendLocalTradeRequest = async () => {
     console.error('Error during the local trade request or broadcasting:', error);
   }
 };
-
-export const sendMultipleBuyRequests = async (numRequests: number) => {
-  console.log(`Starting ${numRequests} concurrent trade requests...`);
-  const tradePromises = [];
-
-  for (let i = 0; i < numRequests; i++) {
-    console.log(`Starting request ${i + 1}`);
-    tradePromises.push(sendLocalTradeRequest());
-  }
-
-  await Promise.all(tradePromises);
-
-  console.log(`${numRequests} transactions sent concurrently.`);
-};
