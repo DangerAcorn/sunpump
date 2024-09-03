@@ -4,6 +4,10 @@
 
 #### If you are a developer and need an advanced Tron/SunPump API here is the [documentation](https://docs.dangeracorn.com)
 
+</br>
+
+![Frame 20](https://github.com/user-attachments/assets/1d0ba3f0-cea4-4e56-bfc6-cc8c23c5ce7a)
+
 # Current SunPump Bot List
 
 ### SunPump Bond Sniper + Monitor
