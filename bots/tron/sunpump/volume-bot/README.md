@@ -39,7 +39,13 @@ MAIN_WALLET_ADDRESS=      # Your main wallet address
 
 ### 4. Start the bot 
 You will be greeted with a CLI GUI:
-
+```
+npm start
+```
+or
+```
+node src/index.js
+```
 ### 5. Select Volume Bot  
 ```
      _                                    ____            _   
@@ -96,3 +102,82 @@ And you will select ``❯ Test Blockchain Functions``.
 ```
 
 And you will select ``❯ Create Wallets``.
+
+Wallets works like this:  # Set 1 Wallets * # Set 2 Wallets
+
+So if you want to add 100 holders you can use 5 set one wallets * 21 set two wallets
+
+Set one wallets do not buy tokens
+
+### Volume.json = Local Wallet DB
+You can view your wallets in the Project Structure Location:
+```
+├── average_response_times.txt
+├── bin
+│   ├── package-exe.js
+│   └── package.json
+├── dangeracorn-bot-linux
+├── dangeracorn-bot-macos
+├── generateStructure.js
+├── package.json
+├── src
+│   ├── bots
+│   │   ├── [DISABLED]
+│   │   ├── [DISABLED]
+│   │   ├── [DISABLED]
+│   │   └── volume
+│   │       ├── backend.js
+│   │       ├── bot.js
+│   │       ├── tests
+│   │       │   ├── data
+│   │       │   │   ├── checkAllowance.js
+│   │       │   │   ├── getTokenBalance.js
+│   │       │   │   ├── getTokenDetails.js
+│   │       │   │   ├── getTokenPrice.js
+│   │       │   │   ├── getTrxBalance.js
+│   │       │   │   └── getTrxPrice.js
+│   │       │   ├── functions
+│   │       │   │   ├── approve.js
+│   │       │   │   ├── checkAndSendFromMainToSet1.js
+│   │       │   │   ├── checkAndSendFromSet1ToSet2.js
+│   │       │   │   ├── createWallet.js
+│   │       │   │   ├── disperseTokens.js
+│   │       │   │   ├── sellTokens.js
+│   │       │   │   ├── sendTokens.js
+│   │       │   │   ├── sendTrx.js
+│   │       │   │   ├── setupWallets.js
+│   │       │   │   ├── swap.js
+│   │       │   │   ├── trade.js
+│   │       │   │   └── withdrawFunds.js
+│   │       │   ├── testMenu.js
+│   │       │   └── volume.json
+│   │       ├── volume copy.json
+│   │       ├── volume.json ⬅️ Here is volume.json
+│   │       └── volumeBot.js
+│   ├── cli
+│   │   ├── inputHandler.js
+│   │   ├── menu.js
+│   │   ├── outputHandler.js
+│   │   └── pauseAndContinue.js
+│   ├── config
+│   │   └── config.js
+│   ├── configLoader.js
+│   ├── index.js
+│   ├── modes
+│   │   ├── production.js
+│   │   └── test.js
+│   ├── services
+│   │   ├── blockService.js
+│   │   ├── transactionService.js
+│   │   └── tronService.js
+│   └── utils
+│       └── loading.js
+├── tester
+│   └── index.js
+├── tests
+│   ├── blockService.test.js
+│   ├── transactionService.test.js
+│   └── tronService.test.js
+```
+
+
