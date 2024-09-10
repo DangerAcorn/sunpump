@@ -16,7 +16,7 @@ Scans and/or snipes tokens as soon as they get promoted to SunSwap
 ### SunPump Launch Sniper + Monitor
 Scans and/or snipes tokens as soon as they are launched on SunPump
 </br>
-### SunPump Volume Bot
+### [SunPump Volume Bot](https://github.com/DangerAcorn/sunpump/tree/main/bots/tron/sunpump/volume-bot)
 Simulates realistic trading activity
 </br>
 ### SunPump Bundler (PRIVATE)
